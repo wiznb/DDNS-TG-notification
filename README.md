@@ -1,4 +1,30 @@
 ```
+wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ipchange.sh && chmod +x ipchange.sh && ipchange.sh
+```
+安装脚本：ipchange.sh
+目录：/root/ipchange
+配置：/root/ipchange/config.env
+状态：/root/ipchange/state
+日志：/root/ipchange/logs
+自动清理：7 天
+
+以后查看后台定时状态，直接：
+  ipchange status
+  ipchange monitor
+
+其它：
+  ipchange doctor
+  ipchange service-test
+  ipchange test
+  ipchange cf-test
+  ipchange geotest
+  ipchange logs
+  ipchange cleanup
+
+----------------------------------------------------------------------------------
+
+
+```
 wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ddns.sh && chmod +x /root/ddns.sh && bash ddns.sh
 ```
 
