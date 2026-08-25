@@ -1,6 +1,7 @@
 ```
 wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ipchange.sh && chmod +x ipchange.sh && bash ipchange.sh
 ```
+```
 ipchange status          # 看当前总体状态
 ipchange monitor         # 实时看后台定时执行
 ipchange test            # Telegram实际测试
@@ -13,12 +14,14 @@ ipchange logs            # 查看日志
 ipchange restart         # 重启后台服务
 ipchange repair          # 重启服务并自检
 ipchange setup           # 重新修改配置
-
+```
+```
 /root/ipchange/
 ├── config.env      # 配置
 ├── state/          # IP历史、心跳、DDNS状态
 ├── logs/           # 日志
 └── install.sh      # 安装器副本
+```
 ----------------------------------------------------------------------------------
 
 
