@@ -1,26 +1,24 @@
 ```
 wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ipchange.sh && chmod +x ipchange.sh && bash ipchange.sh
 ```
-安装脚本：ipchange.sh
-目录：/root/ipchange
-配置：/root/ipchange/config.env
-状态：/root/ipchange/state
-日志：/root/ipchange/logs
-自动清理：7 天
+ipchange status          # 看当前总体状态
+ipchange monitor         # 实时看后台定时执行
+ipchange test            # Telegram实际测试
+ipchange doctor          # 完整自检
+ipchange cf-test         # Cloudflare DDNS检查
+ipchange geotest         # IPv4/IPv6地区检查
+ipchange check           # 马上检测一次
+ipchange cleanup         # 手动清理日志/缓存
+ipchange logs            # 查看日志
+ipchange restart         # 重启后台服务
+ipchange repair          # 重启服务并自检
+ipchange setup           # 重新修改配置
 
-以后查看后台定时状态，直接：
-  ipchange status
-  ipchange monitor
-
-其它：
-  ipchange doctor
-  ipchange service-test
-  ipchange test
-  ipchange cf-test
-  ipchange geotest
-  ipchange logs
-  ipchange cleanup
-
+/root/ipchange/
+├── config.env      # 配置
+├── state/          # IP历史、心跳、DDNS状态
+├── logs/           # 日志
+└── install.sh      # 安装器副本
 ----------------------------------------------------------------------------------
 
 
