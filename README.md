@@ -1,5 +1,5 @@
 ```
-wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ipchange.sh && chmod +x ipchange.sh && ipchange.sh
+wget https://raw.githubusercontent.com/wiznb/DDNS-TG-notification/refs/heads/main/ipchange.sh && chmod +x ipchange.sh && bash ipchange.sh
 ```
 安装脚本：ipchange.sh
 目录：/root/ipchange
